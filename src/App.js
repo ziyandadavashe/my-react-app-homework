@@ -16,7 +16,7 @@ export default function App() {
           </a>{" "}
           and is
           <a
-            href="https://github.com/AnaDany98/weather-react-2/tree/main"
+            href="https://github.com/ziyandadavashe/my-react-app-homework"
             target="_blank"
             rel="noreferrer noopener"
           >
