@@ -25,7 +25,7 @@ export default function App() {
           </a>{" "}
           and
           <a
-            href="https://extraordinary-scone-cf661a.netlify.app/"
+            href="https://app.netlify.com/teams/ziyandadavashe/projects"
             target="_blank"
             rel="noreferrer noopener"
           >
