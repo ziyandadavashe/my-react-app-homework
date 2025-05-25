@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Weather from "./Weather";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <h1>Weather App</h1>
+        {/* Aquí le pasas la ciudad por defecto */}
+        <Weather defaultCity="Lisbon" />
+        <footer>
+          This project was coded by{" "}
+          <a href="" target="_blank" rel="noreferrer noopener">
+            Ziyanda Davashe
+          </a>{" "}
+          and is
+          <a
+            href="https://github.com/AnaDany98/weather-react-2/tree/main"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            {" "}
+            open-sourced on GitHub
+          </a>{" "}
+          and
+          <a
+            href="https://extraordinary-scone-cf661a.netlify.app/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            {" "}
+            hosted on Netlify
+          </a>
+        </footer>
+      </div>
     </div>
   );
 }
-
-export default App;

@@ -2,42 +2,151 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
       content="Web site created using create-react-app"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <link rel="manifest" href="/manifest.json" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="apple-touch-icon" href="./logo192.png" />
+
+    <title>My React Weather App</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <div class="App">
+        <div class="container">
+          <h1>Weather App</h1>
+          <div class="Weather">
+            <form>
+              <div class="row">
+                <div class="col-9">
+                  <input
+                    type="search"
+                    placeholder="Enter a city.."
+                    class="form-control"
+                  />
+                </div>
+                <div class="col-3">
+                  <input
+                    type="submit"
+                    class="btn btn-primary w-100"
+                    value="Search"
+                  />
+                </div>
+              </div>
+            </form>
+            <div class="WeatherInfo">
+              <h1>Lisbon</h1>
+              <ul>
+                <li><div>Sunday 14:22</div></li>
+                <li class="text-capitalize">few clouds</li>
+              </ul>
+              <div class="row mt-3">
+                <div class="col-6">
+                  <div class="d-flex align-items-center">
+                    <canvas width="52" height="52"></canvas>
+                    <div class="WeatherTemperature">
+                      <span class="temperature">24</span
+                      ><span class="unit">°C | <a href="/">°F</a></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <ul>
+                    <li>Humidity: 55%</li>
+                    <li>Wind: 8.23 km/h</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="WeatherForecast">
+              <div class="row">
+                <div class="col">
+                  <div>
+                    <div class="WeatherForecast-day">Sun</div>
+                    <canvas width="36" height="36"></canvas>
+                    <div class="WeatherForecast-temperatures">
+                      <span class="WeatherForecast-temperature-max">25°</span
+                      ><span class="WeatherForecast-temperature-min">12°</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div>
+                    <div class="WeatherForecast-day">Mon</div>
+                    <canvas width="36" height="36"></canvas>
+                    <div class="WeatherForecast-temperatures">
+                      <span class="WeatherForecast-temperature-max">24°</span
+                      ><span class="WeatherForecast-temperature-min">15°</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div>
+                    <div class="WeatherForecast-day">Tue</div>
+                    <canvas width="36" height="36"></canvas>
+                    <div class="WeatherForecast-temperatures">
+                      <span class="WeatherForecast-temperature-max">26°</span
+                      ><span class="WeatherForecast-temperature-min">15°</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div>
+                    <div class="WeatherForecast-day">Wed</div>
+                    <canvas width="36" height="36"></canvas>
+                    <div class="WeatherForecast-temperatures">
+                      <span class="WeatherForecast-temperature-max">30°</span
+                      ><span class="WeatherForecast-temperature-min">15°</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div>
+                    <div class="WeatherForecast-day">Thu</div>
+                    <canvas width="36" height="36"></canvas>
+                    <div class="WeatherForecast-temperatures">
+                      <span class="WeatherForecast-temperature-max">34°</span
+                      ><span class="WeatherForecast-temperature-min">21°</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer>
+            This project was coded by
+            <a
+              href="https://www.linkedin.com/in/ana-daniela-garc%C3%ADa-lara-001336216/"
+              target="_blank"
+              rel="noreferrer noopener"
+              >Ziyanda Davashe</a
+            >
+            and is<a
+              href="https://github.com/AnaDany98/weather-react-2/tree/main"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              open-sourced on GitHub</a
+            >
+            and<a
+              href="https://extraordinary-scone-cf661a.netlify.app/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              hosted on Netlify</a
+            >
+          </footer>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
