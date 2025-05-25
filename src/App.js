@@ -11,12 +11,16 @@ export default function App() {
         <Weather defaultCity="Lisbon" />
         <footer>
           This project was coded by{" "}
-          <a href="" target="_blank" rel="noreferrer noopener">
+          <a
+            href="https://www.linkedin.com/in/ana-daniela-garc%C3%ADa-lara-001336216/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             Ziyanda Davashe
           </a>{" "}
           and is
           <a
-            href="https://github.com/ziyandadavashe/my-react-app-homework"
+            href="https://github.com/AnaDany98/weather-react-2/tree/main"
             target="_blank"
             rel="noreferrer noopener"
           >
@@ -25,7 +29,7 @@ export default function App() {
           </a>{" "}
           and
           <a
-            href="https://app.netlify.com/teams/ziyandadavashe/projects"
+            href="https://extraordinary-scone-cf661a.netlify.app/"
             target="_blank"
             rel="noreferrer noopener"
           >
