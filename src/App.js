@@ -12,7 +12,7 @@ export default function App() {
         <footer>
           This project was coded by{" "}
           <a
-            href="https://www.linkedin.com/in/ana-daniela-garc%C3%ADa-lara-001336216/"
+            href="https://www.linkedin.com/in/ziyanda-davashe-a3919b1a/"
             target="_blank"
             rel="noreferrer noopener"
           >
@@ -20,7 +20,7 @@ export default function App() {
           </a>{" "}
           and is
           <a
-            href="https://github.com/AnaDany98/weather-react-2/tree/main"
+            href="https://github.com/ziyandadavashe/my-react-app-homework"
             target="_blank"
             rel="noreferrer noopener"
           >
